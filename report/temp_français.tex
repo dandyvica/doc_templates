@@ -10,6 +10,8 @@
 
 \usepackage{marginnote}
 
+\usepackage{multicol}
+
 % géométrie du doc
 \usepackage[left=1.9cm,top=3cm,bottom=2.5cm,right=1.9cm]{geometry}
 
@@ -131,10 +133,10 @@
 \lipsum
 
 \chapter{Chapitre numéroté}
-\lipsum
-
 \section{Section numérotée}
+\begin{multicols}{2}
 \lipsum
+\end{multicols}
 
 \begin{figure}
 	\centering
