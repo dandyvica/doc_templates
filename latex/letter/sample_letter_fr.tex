@@ -1,0 +1,134 @@
+% pragma-like magic comments
+% !TEX program = xelatex
+
+% define a new A4 document with 12pt font size
+\documentclass[a4paper,12pt]{article}
+
+% for mobile phone etc symbols
+\usepackage{marvosym}
+	
+% french accents etc	
+\usepackage[francais]{babel}
+
+% set margins with no header and no footer
+\usepackage[left=1.9cm,top=2cm,bottom=2.5cm,right=1.9cm,nohead,nofoot]{geometry}
+
+% if fancy tables are needed
+\usepackage{array}
+
+% if colors are needed
+\usepackage{color}
+
+% to use TrueType fonts. Caveat: need to compile with XeLatex
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}
+
+% no page numbers
+\pagestyle{empty}
+
+% for images and set image files list of paths
+\usepackage{graphicx}
+\graphicspath{{.}{../../../Photos/}}
+
+% no paragraph identation (or change it to whatever is needed)
+\setlength{\parindent}{0pt}
+
+% space between paragraphs
+\setlength{\parskip}{11pt}
+
+% interline space
+\linespread{1.125}
+
+% PDF metadata
+\usepackage[
+            pdfauthor={Victor Hugo},
+			pdftitle={Les Misérables},
+			xetex
+            ]{hyperref}
+            
+% specific to French language
+\frenchspacing
+
+%% ------------------------------------------------------------
+%% document start
+%% ------------------------------------------------------------
+\begin{document}
+
+%% ------------------------------------------------------------
+%% header table
+%% ------------------------------------------------------------
+\begin{tabular}{p{10cm} p{5cm}}
+	
+	\begin{minipage}[t]{0.40\textwidth}
+		\begin{flushleft}
+			{\Large \textbf{Victor Hugo}}\\[10pt]
+			11 rue de la Liberté \\
+			75001 Paris\\[8pt]
+			\Mobilefone ~ +33 06 00 00 00 00\\
+			\Email ~ victor.hugo@outlook.fr\\[20pt]
+		\end{flushleft}
+	\end{minipage}
+	
+	&
+	
+	\begin{minipage}[t]{0.35\textwidth}
+		\begin{flushright}
+			{\Large \textbf{Société Bertrand}}\\[10pt]
+			11 rue de Rivoli\\
+			75001 Paris\\
+		\end{flushright}
+	\end{minipage}  
+	
+\end{tabular}
+
+
+
+\begin{flushleft}
+Location, and date here
+
+Letter object here
+\end{flushleft}
+
+
+
+\vspace{1.5cm}
+
+%% ------------------------------------------------------------
+%% Letter body
+%% ------------------------------------------------------------
+Monsieur Myriel,
+
+\vspace{1.5cm}
+
+En 1815, M. Charles-François-Bienvenu Myriel était évêque de Digne.
+C'était un vieillard d'environ soixante-quinze ans; il occupait le siège
+de Digne depuis 1806.
+
+Quoique ce détail ne touche en aucune manière au fond même de ce que
+nous avons à raconter, il n'est peut-être pas inutile, ne fût-ce que
+pour être exact en tout, d'indiquer ici les bruits et les propos qui
+avaient couru sur son compte au moment où il était arrivé dans le
+diocèse. Vrai ou faux, ce qu'on dit des hommes tient souvent autant de
+place dans leur vie et surtout dans leur destinée que ce qu'ils font. M.
+Myriel était fils d'un conseiller au parlement d'Aix; noblesse de robe.
+
+On contait de lui que son père, le réservant pour hériter de sa charge,
+l'avait marié de fort bonne heure, à dix-huit ou vingt ans, suivant un
+usage assez répandu dans les familles parlementaires. Charles Myriel,
+nonobstant ce mariage, avait, disait-on, beaucoup fait parler de lui. Il
+était bien fait de sa personne, quoique d'assez petite taille, élégant,
+gracieux, spirituel; toute la première partie de sa vie avait été donnée
+au monde et aux galanteries.
+
+ La révolution survint, les événements se
+précipitèrent, les familles parlementaires décimées, chassées, traquées,
+se dispersèrent. M. Charles Myriel, dès les premiers jours de la
+révolution, émigra en Italie. Sa femme y mourut d'une maladie de
+poitrine dont elle était atteinte depuis longtemps. Ils n'avaient point
+d'enfants. Que se passa-t-il ensuite dans la destinée de M. Myriel?
+
+
+\vspace{1cm}
+\hspace{10cm} Victor Hugo
+
+\end{document}
